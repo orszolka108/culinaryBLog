@@ -1,0 +1,57 @@
+
+
+/* ------------------------------------------------------------- */
+/* main-menu */
+/* ------------------------------------------------------------- */
+
+.main-menu {
+  background-color: $color-one;
+  height: 715px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("../images/pita.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: $color-one-lighter;
+  .page-nav {
+    .page-nav-list {
+      list-style: none;
+      display: flex;
+      .page-nav-list-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px;
+        display: inline-block;
+        color: $color-two;
+        &:hover {
+          color: $color-four;
+        }
+      }
+    }
+  }
+}
+
+
+.page-header {
+  .page-logo {
+    text-decoration: none;
+    margin-left: 20px;
+    img {
+      width: 15%;
+      color: $color-two;
+    }
+  }
+}
