@@ -1,0 +1,51 @@
+.main-about {
+  background-color: $color-one;
+  .container {
+    .main-box {
+      text-align: center;
+      color: $color-two;
+      padding: 50px;
+      position: relative;
+      .main-about-title {
+        //font-family: 'Shadows Into Light', cursive;
+        font-size: 50px;
+        margin: 30px auto;
+        text-transform: uppercase;
+      }
+      .main-about-text {
+        line-height: 25px;
+        margin-bottom: 60px;
+        padding: 55px;
+      }
+      .main-about-link {
+        font-size: 22px;
+        text-decoration: none;
+        color: $color-two;
+        margin-bottom: 30px;
+
+      }
+    }
+  }
+}
+.about-span {
+  &:after {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background-color: $color-one;
+    border-radius: 50%;
+    position: absolute;
+    top: -75px;
+    right: 496px;
+    z-index: 0;
+  }
+}
+
+.arrow {
+  font-weight: 900;
+  top: -33px;
+  position: absolute;
+  right: 558px;
+  z-index: 2;
+  font-size: 44px;
+}
