@@ -18,7 +18,7 @@
         padding: 55px;
       }
       .main-about-link {
-        font-size: 22px;
+        font-size: 2.5em;
         text-decoration: none;
         color: $color-two;
         margin-bottom: 30px;
@@ -35,17 +35,17 @@
     background-color: $color-one;
     border-radius: 50%;
     position: absolute;
-    top: -75px;
-    right: 496px;
+    top: -13%;
+    right: 43%;
     z-index: 0;
   }
 }
 
 .arrow {
   font-weight: 900;
-  top: -33px;
+  top: -5%;
   position: absolute;
-  right: 558px;
+  right: 49%;
   z-index: 2;
-  font-size: 44px;
+  font-size: 2.5em;
 }

@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: 1140px;
+  width: 115vh;
   margin:0 auto;
 }
 
@@ -19,4 +19,13 @@ body {
   text-transform: uppercase;
   border-radius: 5px;
 
+}
+.status {
+  height: 0.5vh;
+  width: 0%;
+  background-color: $color-four;
+  transition: 0.6s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
