@@ -10,14 +10,14 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: $color-one;
 }
 
 .button {
   padding: 20px 40px;
   background-color: $color-four;
   text-transform: uppercase;
-  border-radius: 5px;
 
 }
 .status {
