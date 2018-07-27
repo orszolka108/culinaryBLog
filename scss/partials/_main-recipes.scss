@@ -8,6 +8,9 @@
   }
   .main-recipes-box {
     display: flex;
+    .recipes {
+      padding-left: 50px;
+    }
     .main-recipes-left {
       width: 50%;
       img {
@@ -15,6 +18,12 @@
       }
     }
   }
+}
+.recipe-button {
+  margin-top: 10px;
+  background-color: $color-one;
+  border: 1px solid $color-four;
+  color: $color-two;
 }
 
 .main-recipes-right {
@@ -38,6 +47,6 @@
 
 .recipe-list {
   list-style: none;
-  line-height: 30px;
+  line-height: 25px;
   text-transform: uppercase;
 }
