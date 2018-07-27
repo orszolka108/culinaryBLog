@@ -3,7 +3,15 @@
 /* ------------------------------------------------------------- */
 /* main-menu */
 /* ------------------------------------------------------------- */
-
+.status {
+  height: 0.5vh;
+  width: 0%;
+  background-color: $color-four;
+  transition: 0.6s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 .main-menu {
   background-color: $color-one;
   height: 715px;
