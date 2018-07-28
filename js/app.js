@@ -9,7 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", statusBar);
 
-// gallery
+// recipes
+    const recipe = document.querySelector('.recipe-box');
+    const recipeBtn = document.querySelector('.recipe-button');
+    const closeBtn = document.querySelector('.close-button');
+
+    recipeBtn.addEventListener('click', function(){
+        recipe.classList.toggle('show-recipe');
+    })
+
+    closeBtn.addEventListener('click', function() {
+        recipe.classList.toggle('show-recipe');
+    })
 
 });
 
