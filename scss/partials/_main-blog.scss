@@ -14,13 +14,13 @@
     justify-content: space-between;
     .main-blog-post {
       flex: 1;
-      height: 60vw;
+      height: 40vw;
       background-color: $color-two;
       background-size: cover;
       background-position: -350px 0;
       &:first-child {
         margin-right: 10px;
-        background-position: -1000px 0;
+        background-position: -400px 0;
       }
       &:last-child {
         margin-left: 10px;
