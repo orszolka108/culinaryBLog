@@ -75,12 +75,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: $color-one;
-    width: 61.5rem;
+    width: 67.5rem;
+    .recipe-box-title {
+      text-align: center;
+      margin: 20px 0;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
     .close-button {
       float: right;
       width: 1.5rem;
       line-height: 1.5rem;
       cursor: pointer;
+      font-size: 30px;
       &:hover {
         color: $color-four;
       }
@@ -88,6 +95,15 @@
     .recipe-box-text {
       line-height: 2rem;
       padding: 10px;
+
+      img {
+        width: 40%;
+        margin:0 20px;
+        float: right;
+      }
+      .photo-two {
+        float: left;
+      }
     }
   }
 }
