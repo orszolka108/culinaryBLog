@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 3.4rem 0;
 
 }
 
@@ -189,6 +189,65 @@ ul li a:hover {
     font-weight: 300;
   }
 }
+.main-text,  {
+  position: relative;
+}
+.scroll-btn {
+  padding-top: 70px;
+  span {
+    position: absolute;
+    bottom: -123px;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
+    display: block;
+  }
+
+}
+.scroll-btn span:before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  background-color: $main-blue;
+  border-radius: 50%;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+
+
 /*Section - About me*/
 .store {
   width: 100%;
@@ -309,6 +368,7 @@ ul li a:hover {
 /* Section - Subscribe */
 
 .subscribe {
+  border-top: 1px solid $main-font-light-grey;
   .par {
     font-size: 1.2rem;
   }
@@ -319,7 +379,7 @@ ul li a:hover {
     input {
       width: 100%;
       max-width: 100%;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
       padding: 5px 1rem;
       font-size: 1.2rem;
       text-transform: uppercase;
@@ -358,6 +418,26 @@ ul li a:hover {
   opacity: 0.7;
   color: $main-detail-color;
 }
+
+  footer {
+    .container {
+      background-color: #24323D !important;
+      width: 100%;
+      h1 {
+        padding-top: 30px;
+        margin-bottom: 0;
+      }
+    } 
+  }
+
+  footer .contact {
+    text-align: center;
+    p {
+      font-size: 1rem;
+      font-weight: 100;
+      padding: 20px;
+    }
+  }
 
 
 
