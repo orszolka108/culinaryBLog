@@ -6,13 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="test.js"></script>
+    <title>CaptainCook - Culinary blog</title>
 </head>
 <body>
-    <div class="status"></div>
+    <!-- <div class="status"></div>
     <div class="main-menu">
         <div class="container">
             <div class="page-nav">
@@ -140,8 +143,104 @@
                 <i class="fab fa-google-plus-g"></i>
             </footer>
         </div>
-    </div>
+    </div> -->
+    <header id="home">
+        <div class="menu">
+            <span class="bar">
+            </span>
+        </div>
+        <nav class="nav">
+            <div class="overlay">
+                <ul>
+                    <li><a href="about">About</a></li>
+                    <li><a href="recipes">Recipes</a></li>
+                    <li><a href="subscribe">Subscribe</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-text">
+            <h1>Let's</h1>
+            <h2>COOK</h2>
+            <h5>The best recipes in the world</h5>
+        </div>
+    </header>
+    <section class="about-me" id="about">
+        <div class="container">
+            <h1 class="normal-font">About me</h1>
+            <div class="photo"></div>
+            <p>
+                LEMON DROPS TART PIE FRUITCAKE CAKE LOLLIPOP ICING GINGERBREAD MUFFIN. MUFFIN SOUFFLÉ CANDY CANES BEAR CLAW SWEET TART TOFFEE.
+                DONUT COTTON CANDY CHEESECAKE CARAMELS TOPPING CUPCAKE LIQUORICE BISCUIT JELLY.
+            </p>
+            <div class="store"></div>
+            
+        </div>
+    </section>
+    <section class="recipe">
+        <div class="container">
+            <h1 class="custom-font">
+                My 
+            </h1>
+            <h2 class="normal-font">recipes</h2>
+            <a class="btn" href="#">Explore</a>
+        </div>
+    </section>
+    <section class="my-recipes" id="my-recipes">
+        <div class="container">
+            <div class="gallery">
+                    <figure class=”gallery__item--1">
+                            <img src="images/brunch.jpg" class="gallery__img" alt="">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                            <img class="gallery__img" src="images/pancakes.jpg" alt="">
+                        
+                    </figure>
+                    <figure class="gallery__item gallery__item--3">
+                        <img src="images/bowl.jpg" class="gallery__img" alt="">
+                    </figure>
+                    <figure class="gallery__item gallery__item--4">
+                        <img class="gallery__img" src="images/burger.jpg" alt="">
+                    </figure>
+                    <figure class="gallery__item gallery__item--5">
+                        <img src="images/avocado.jpg" class="gallery__img" alt="">
+                    </figure>
+                    <figure class="gallery__item gallery__item--6">
+                        <img src="images/bruschettes.jpg" class="gallery__img" alt="">
+                    </figure>
+                  </div>
+        </div>
+    </section>
+    <section class="subscribe" id="subscribe">
+            <div class="container">
+                <h1 class="normal-font">SUBSCRIBE</h1>
+                <h1 class="normal-font par">
+                    SIGN-UP FOR MY NEWSLETTER
+                </h1>
+                <form action="">
+                    <input type="text" class='input' placeholder="Your email..." name="email" required>
+                </form>
+                <a class="btn-submit btn" href="#">SUBMIT</a>
+                
+            </div>
+        </section>
+        <footer>
+             <div class="find-me">
+                 <h1>FIND ME</h1>
+                 <a href="#" class="fa fa-facebook"></a>
+                 <a href="#" class="fa fa-youtube"></a>
+                 <a href="#" class="fa fa-pinterest"></a>
+                 <a href="#" class="fa fa-instagram"></a>
 
-        <script src="js/app.js"></script>
+                 
+             </div>
+             <div class="contact">
+                 <p>
+                     contact@captain-cook.pl
+                    +48 666 666 666
+                </p>
+             </div>
+        </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
