@@ -448,21 +448,10 @@ ul li a:hover {
     }
   }
 
-
-
-// .button {
-//   padding: 20px 40px;
-//   background-color: $color-four;
-//   text-transform: uppercase;
-//   &:focus {
-//     background-color: $color-three-lighter;
-//   }
-
-// }
-// .status {
+// .scroll.status {
 //   height: 0.5vh;
 //   width: 0%;
-//   background-color: $color-four;
+//   background-color: $main-detail-color;
 //   transition: 0.6s linear;
 //   position: fixed;
 //   top: 0;
@@ -470,7 +459,7 @@ ul li a:hover {
 // }
 
 @media screen and (min-width: 769px) {
-  header {
+  header, .recipe {
     background-attachment: fixed;
   }
   .menu {
@@ -503,11 +492,135 @@ ul li a:hover {
     padding: 6rem 0;
   
   }
+  #logo {
+    display: block;
+  }
+
+  .main-text h1 {
+    transform: translateY(4rem);
+    opacity: 0;
+    animation: .5s fadeUp .5s forwards;
+
+  }
+  .main-text h2 {
+    transform: scale(2);
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+  }
+  .main-text h5 {
+    opacity: 0;
+    animation: .5s fade 1s forwards;
+  }
+  @keyframes fadeIn {
+    0% {
+      transform: scale(2);
+      opacity: 0
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeUp {
+    0% {
+      transform: translateY(4rem);
+      opacity: 0
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
   // .container {
   //   display: flex;
   //   flex-direction: row;
   //   align-items: center;
     
   // }
+  // .img-container {
+  //   position: relative;
+  //   width: 50%;
+  //   img {
+  //     opacity: 1;
+  //     display: block;
+  //     width: 100%;
+  //     height: auto;
+  //     transition: .5s ease;
+  //     backface-visibility: hidden;
+  //   }
+  // }
+  
+
+
+
+  .scrollToTop{
+    width:100px; 
+    height:130px;
+    padding:10px; 
+    text-align:center; 
+    background: whiteSmoke;
+    text-decoration: none;
+    position:fixed;
+    bottom:0; 
+    right:40px;
+    display:none;
+    background: url('arrow_up.png') no-repeat 0px 20px;
+    font-size: 4rem;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
+
+.img-container {
+  position: relative;
+  img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .box {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    span {
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+  }
 
 }
+.img-container {
+  &:hover {
+    img {
+      opacity: 0.3;
+    }
+  }
+}
+.img-container {
+  &:hover {
+    .box {
+      opacity: 1;
+    }
+  }
+}
+
+}
+
